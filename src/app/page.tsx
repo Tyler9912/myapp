@@ -1,58 +1,70 @@
 import Image from "next/image";
+import Link from "next/link";
 import 'bulma/css/bulma.min.css';
 
 export default function Home() {
   return (
-    <section className="hero is-fullheight is-light">
+    <section className="hero is-fullheight has-background-white">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <h1 className="title is-1 has-text-weight-bold has-text-black">
-            🍔 Welcome to FoodBot
+          <h1 className="title is-1 has-text-weight-bold has-text-black mb-3">
+            🎉 Welcome to Birthday Tracker
           </h1>
-          <h2 className="subtitle is-4 has-text-grey-dark">
-            Your AI-powered food assistant — Order smarter, eat faster.
+          <h2 className="subtitle is-4 has-text-grey-dark mb-5">
+            Birthday service automation
           </h2>
 
-          <div className="buttons is-centered mt-5">
-            <a className="button is-primary is-medium">Try It Now</a>
-            <a className="button is-light is-medium">Learn More</a>
+          <div className="buttons is-centered mb-6">
+            <a
+              href="https://believe.app"
+             target="_blank"
+              rel="noopener noreferrer"
+             className="button is-primary is-medium is-rounded has-text-weight-semibold shadow-sm"
+  >
+    Believe in Something
+  </a>
+
           </div>
 
-          <div className="mt-6">
+          <div className="mt-4 mb-6">
             <img
               src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
               alt="Delicious Food"
-              style={{ borderRadius: '12px', maxWidth: '90%', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
+              style={{
+                borderRadius: '16px',
+                maxWidth: '90%',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
+              }}
             />
           </div>
 
-          <div className="section mt-6">
+          <div className="section">
             <div className="columns is-centered">
               <div className="column is-one-third">
-                <div className="box has-text-left">
-                  <h3 className="title is-5">🔍 Smart Recommendations</h3>
-                  <p>Let the bot learn your taste and suggest meals tailored just for you.</p>
+                <div className="box has-background-light has-text-left">
+                  <h3 className="title is-5">🔍 Find rewards near you</h3>
+                  <p>Something for everyone!</p>
                 </div>
               </div>
               <div className="column is-one-third">
-                <div className="box has-text-left">
-                  <h3 className="title is-5">🤖 Seamless Ordering</h3>
-                  <p>Skip the line and order directly via chat or voice.</p>
+                <div className="box has-background-light has-text-left">
+                  <h3 className="title is-5">🤖 Automation</h3>
+                  <p>Don't worry about missing rewards with alerts</p>
                 </div>
               </div>
               <div className="column is-one-third">
-                <div className="box has-text-left">
-                  <h3 className="title is-5">📦 Real-time Tracking</h3>
-                  <p>Know exactly where your order is and when it arrives.</p>
+                <div className="box has-background-light has-text-left">
+                  <h3 className="title is-5">📦 Reap the rewards</h3>
+                  <p>Find many ways to save</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <footer className="footer mt-6">
-            <div className="content has-text-centered">
+          <footer className="footer has-background-white mt-6">
+            <div className="content has-text-centered has-text-grey">
               <p>
-                <strong>FoodBot</strong> by Tyler. © {new Date().getFullYear()}
+                <strong>Birthday Alert Bot</strong> by Buddha Blessed. © {new Date().getFullYear()}
               </p>
             </div>
           </footer>
