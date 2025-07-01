@@ -17,13 +17,20 @@ export default function Home() {
           <div className="buttons is-centered mb-6">
             <a
               href="https://believe.app"
-             target="_blank"
+              target="_blank"
               rel="noopener noreferrer"
-             className="button is-primary is-medium is-rounded has-text-weight-semibold shadow-sm"
-  >
-    Believe in Something
-  </a>
+              className="button is-primary is-medium is-rounded has-text-weight-semibold shadow-sm"
+            >
+              Believe in Something
+            </a>
 
+            {/* Added Learn More button linking to /about */}
+            <Link 
+              href="/about" 
+              className="button is-link is-medium is-rounded has-text-weight-semibold shadow-sm"
+            >
+              Learn More
+            </Link>
           </div>
 
           <div className="mt-4 mb-6">
@@ -64,7 +71,7 @@ export default function Home() {
           <footer className="footer has-background-white mt-6">
             <div className="content has-text-centered has-text-grey">
               <p>
-                <strong>Birthday Alert Bot</strong> by Buddha Blessed. © {new Date().getFullYear()}
+                <strong>Birthday Tracker</strong> by Buddha Blessed. © {new Date().getFullYear()}
               </p>
             </div>
           </footer>
